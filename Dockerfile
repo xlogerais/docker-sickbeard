@@ -1,5 +1,5 @@
 #
-#
+# Dockerfile for sickbeard (french version)
 #
 FROM python:2
 
@@ -14,7 +14,7 @@ RUN pip install cheetah
 # Download latest version
 USER sickbeard
 WORKDIR /home/sickbeard
-RUN git clone https://github.com/midgetspy/Sick-Beard.git ./app
+RUN git clone https://github.com/sarakha63/Sick-Beard ./app
 
 # Create a volume for series
 USER sickbeard
